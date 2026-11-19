@@ -1,0 +1,27 @@
+# Tufte Research matplotlib style. Validate meaning and units of actual data.
+font.family: sans-serif
+font.sans-serif: DejaVu Sans, Noto Sans CJK JP, Arial
+font.size: 11
+axes.titlesize: 13
+axes.labelsize: 11
+legend.fontsize: 10
+xtick.labelsize: 10
+ytick.labelsize: 10
+figure.facecolor: "#FFFFF8"
+savefig.facecolor: "#FFFFF8"
+axes.facecolor: "#FFFFF8"
+axes.edgecolor: "#D8D6C7"
+axes.labelcolor: "#263137"
+text.color: "#263137"
+xtick.color: "#5D686B"
+ytick.color: "#5D686B"
+grid.color: "#E3E3D7"
+grid.alpha: 0.55
+axes.grid: False
+axes.spines.top: False
+axes.spines.right: False
+lines.linewidth: 2
+lines.markersize: 5
+axes.prop_cycle: cycler(color=["#276C73", "#B45537", "#6E59A0", "#748B40", "#986A86"])
+savefig.dpi: 300
+figure.constrained_layout.use: True

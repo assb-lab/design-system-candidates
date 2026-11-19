@@ -1,0 +1,19 @@
+/* Scientific Editorial: standalone original tokens, no third-party assets */
+:root {
+  --research-background: #FFFFFF;
+  --research-surface: #F6F7F7;
+  --research-text: #1A2530;
+  --research-muted: #56616B;
+  --research-primary: #1C526B;
+  --research-accent: #B75235;
+  --research-border: #D8DFE3;
+  --research-grid: #DFE5E7;
+  --research-series-1: #0072B2;
+  --research-series-2: #D55E00;
+  --research-series-3: #009E73;
+  --research-series-4: #CC79A7;
+  --research-series-5: #7851A9;
+  --research-font-latin: "Arial", sans-serif;
+  --research-font-ja: "Noto Sans JP", "Yu Gothic", sans-serif;
+  --research-spacing: 8px;
+}

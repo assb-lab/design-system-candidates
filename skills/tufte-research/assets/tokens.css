@@ -1,0 +1,19 @@
+/* Tufte Research: standalone original tokens, no third-party assets */
+:root {
+  --research-background: #FFFFF8;
+  --research-surface: #F8F6ED;
+  --research-text: #263137;
+  --research-muted: #5D686B;
+  --research-primary: #8A3F33;
+  --research-accent: #276C73;
+  --research-border: #D8D6C7;
+  --research-grid: #E3E3D7;
+  --research-series-1: #276C73;
+  --research-series-2: #B45537;
+  --research-series-3: #6E59A0;
+  --research-series-4: #748B40;
+  --research-series-5: #986A86;
+  --research-font-latin: "Source Serif 4", sans-serif;
+  --research-font-ja: "Noto Serif JP", "Yu Gothic", sans-serif;
+  --research-spacing: 8px;
+}

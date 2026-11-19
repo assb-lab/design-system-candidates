@@ -1,0 +1,19 @@
+/* Metropolis Research: standalone original tokens, no third-party assets */
+:root {
+  --research-background: #FCFDFB;
+  --research-surface: #F1F5F3;
+  --research-text: #203638;
+  --research-muted: #53666A;
+  --research-primary: #087C84;
+  --research-accent: #CB6539;
+  --research-border: #CBD9D5;
+  --research-grid: #D9E3E0;
+  --research-series-1: #087C84;
+  --research-series-2: #CB6539;
+  --research-series-3: #6E62A3;
+  --research-series-4: #5F7E48;
+  --research-series-5: #AD4C6A;
+  --research-font-latin: "Fira Sans", sans-serif;
+  --research-font-ja: "Noto Sans JP", "Yu Gothic", sans-serif;
+  --research-spacing: 8px;
+}

@@ -1,0 +1,19 @@
+/* Carbon Research: standalone original tokens, no third-party assets */
+:root {
+  --research-background: #FFFFFF;
+  --research-surface: #F4F4F4;
+  --research-text: #161616;
+  --research-muted: #525252;
+  --research-primary: #0F62FE;
+  --research-accent: #8A3800;
+  --research-border: #C6C6C6;
+  --research-grid: #E0E0E0;
+  --research-series-1: #0F62FE;
+  --research-series-2: #6929C4;
+  --research-series-3: #007D79;
+  --research-series-4: #D12771;
+  --research-series-5: #8A3800;
+  --research-font-latin: "IBM Plex Sans", sans-serif;
+  --research-font-ja: "Noto Sans JP", "Yu Gothic", sans-serif;
+  --research-spacing: 8px;
+}

@@ -1,0 +1,19 @@
+/* Midnight Technical: standalone original tokens, no third-party assets */
+:root {
+  --research-background: #0B1322;
+  --research-surface: #162236;
+  --research-text: #F6F8FF;
+  --research-muted: #B8C9D9;
+  --research-primary: #72D5E6;
+  --research-accent: #FFD084;
+  --research-border: #334558;
+  --research-grid: #304457;
+  --research-series-1: #72D5E6;
+  --research-series-2: #FFB870;
+  --research-series-3: #C7AEF6;
+  --research-series-4: #8DDAB3;
+  --research-series-5: #FF86B6;
+  --research-font-latin: "Inter", sans-serif;
+  --research-font-ja: "Noto Sans JP", "Yu Gothic", sans-serif;
+  --research-spacing: 8px;
+}
