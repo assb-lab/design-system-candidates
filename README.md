@@ -82,6 +82,48 @@ OresmeProのデータ解析画面をCarbon Researchのグリッドとトーク�
 
 本家の出力機能や前提条件は上流の最新ドキュメントを確認してください。**収録5スキルをインストールしても上記4件は自動的にはインストールされません。**
 
+## その他の既存Agent Skills — 追加調査（2026-11-19）
+
+以下は実際に公開されている `SKILL.md` を確認できたものです。**このリポジトリ内には複製せず、上流から直接 `npx skills add` してください。** CLIによる個々のインストール実行テストまでは行っていません。必要な実行環境・APIキーは別途準備します。
+
+### A. デザインテーマ・Webデザイン
+
+| スキル | 得意なこと・何に使えるか | 注意点 | インストール |
+| --- | --- | --- | --- |
+| [Theme Factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) | **スライド／文書／HTML向けの10種類の配色＋書体テーマ**。Ocean Depths、Modern Minimalist、Midnight Galaxyなどを選べるほか、新規テーマも提案 | 配色・フォント中心。スライド生成エンジンは別 | `npx skills add anthropics/skills --skill theme-factory` |
+| [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 多数のデザインスタイル、パレット、書体、グラフ、アクセシビリティやUIパターンを検索。React/Next.js等の**研究用Webアプリ・解析UI**に好適 | Web/UI中心でPPTX用テンプレートではない | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max` |
+| [Design System](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design-system/SKILL.md) | Primitive → Semantic → Componentのトークン階層。CSS変数、コンポーネント定義、検証、スライドの規則にも対応 | 既存の大学公式トークンと競合しないよう役割分離が必要 | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill --skill design-system` |
+| [Frontend Design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | 量産型ではないレイアウト・タイポグラフィ・色使い、研究WebページやWebアプリの見た目の改善 | 科学データの妥当性や数式組版には別途確認が必要 | `npx skills add anthropics/skills --skill frontend-design` |
+| [Slides（HTML/Chart.js）](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/slides/SKILL.md) | HTMLスライド、Chart.jsのデータ可視化、戦略的なスライド構成 | マーケティング系の原則も含むため研究発表では主張の根拠を優先 | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill --skill slides` |
+
+### B. スライド制作・配布用プレゼン
+
+| スキル | 得意なこと・何に使えるか | 注意点 | インストール |
+| --- | --- | --- | --- |
+| [Slidev（公式）](https://github.com/slidevjs/slidev/tree/main/skills/slidev) | Markdown＋Vueの**Webプレゼン**。数式、Mermaid、アニメーション、コード、インタラクティブな図。PDF/PPTX/SPAなどに出力 | Slidev本体のNode.js環境等が必要。PPTXは元データの編集性を別途確認 | `npx skills add slidevjs/slidev --skill slidev` |
+| [Presentation Creator](https://github.com/mblode/agent-skills/tree/main/skills/presentation-creator) | 発表のストーリー、スライド分量、見出し、話者ノートの設計。Marp、Slidev、Reveal.js等の構成 | `.pptx`自体の作成・編集は別ツールへ渡す | `npx skills add mblode/agent-skills --skill presentation-creator` |
+| [PPTX（Anthropic）](https://github.com/anthropics/skills/tree/main/skills/pptx) | PowerPointの新規作成・編集・レビュー、テンプレート・レイアウト・注釈・ノートの処理 | スキルのインストールだけでは生成ライブラリは導入されない | `npx skills add anthropics/skills --skill pptx` |
+| [Slides（Marp/Apple-like）](https://github.com/mattwoodco/skills/tree/main/skills/slides) | Markdownから余白の広いミニマルな**Apple Keynote風**プレゼンを作る | Marp CLI等の追加導入が必要。上記HTML Slidesと`slides`名が重複するので併用時に注意 | `npx skills add mattwoodco/skills --skill slides` |
+
+### C. 学会ポスター・図版・インフォグラフィック
+
+| スキル | 得意なこと・何に使えるか | 注意点 | インストール |
+| --- | --- | --- | --- |
+| [PPTX Posters](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/pptx-posters) | **PowerPointで編集できる学会ポスター**。物理寸法、印刷規定、ソース追跡、アクセシビリティ、PPTX検証 | Python / python-pptx等が必要。ポスター専用 | `npx skills add K-Dense-AI/scientific-agent-skills --skill pptx-posters` |
+| [LaTeX Posters](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/latex-posters) | beamerposter / tikzposter / baposterを使うマルチカラムの**数式中心の学会PDFポスター** | LaTeXと対象クラスが必要（baposterはクラスを別途提供） | `npx skills add K-Dense-AI/scientific-agent-skills --skill latex-posters` |
+| [Canvas Design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) | 研究紹介ポスター、展示パネル、配布用ビジュアルの**構図・タイポグラフィを重視した静的デザイン** | PNG/PDFなどの静的成果物が中心。科学図表の正確性は人が検証 | `npx skills add anthropics/skills --skill canvas-design` |
+| [Infographics](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/infographics) | 研究概要、比較、タイムライン、測定フローを**インフォグラフィック画像**として構成 | OpenRouter APIキー・ネットワーク・費用が必要。生成画像は事実と数値を必ず検証 | `npx skills add K-Dense-AI/scientific-agent-skills --skill infographics` |
+| [Scientific Schematics](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-schematics) | 実験フロー、装置概念図、プロセス、システム構造の図案と自動レビュー | OpenRouter APIキー等が必要。**ラスターPNG**出力でありベクター図版ではない | `npx skills add K-Dense-AI/scientific-agent-skills --skill scientific-schematics` |
+
+### 組合せの例
+
+- **学会PPTX:** `theme-factory` ＋ `scientific-slides`（上記既存リスト）＋ `pptx`。デザイン・発表構成・ファイル出力を分離。
+- **学会ポスター:** `scientific-visualization`（上記既存リスト）＋ `pptx-posters` または `latex-posters`。科学図の検証とレイアウト制作を分離。
+- **測定Webアプリ:** `ui-ux-pro-max` ＋ `design-system` ＋ `scientific-editorial`（このリポジトリ）。操作体験・トークン・図表の質を分担。
+- **Webベースの研究発表:** `slidev` ＋ `theme-factory`。アニメーション／数式／デザインの統一を分担。
+
+複数スキルで同名（例：`slides`）がある場合は、インストールする側の名前衝突に注意し、どちらかを選ぶかCLIの `--rename` を利用してください。外部スキルの利用権限・更新・依存ライブラリについては、各上流リポジトリの規定を優先します。
+
 ## 品質・権利の原則
 
 - データの値、外れ値、欠損、正規化、計測条件、誤差、単位、引用を見栄えのために変えない。
