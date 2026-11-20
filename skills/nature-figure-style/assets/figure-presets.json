@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "checked_at": "2026-11-20",
+  "publisher": "Nature",
+  "scope": "Nature本誌のFigure Guide（Nature Portfolio全誌へ一括適用しない）",
+  "official_guidelines": [
+    "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/",
+    "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/"
+  ],
+  "guidelines_are_journal_specific": true,
+  "figure_width_mm": {
+    "single": 89,
+    "double": 183,
+    "min": null,
+    "max": 183,
+    "height": 170,
+    "max_height": 170
+  },
+  "raster_min_dpi": {
+    "photo": 300,
+    "grayscale": 300,
+    "line": null
+  },
+  "raster_preferred_dpi": {
+    "photo": 450
+  },
+  "vector_line_art_preferred": true,
+  "max_file_mb": null,
+  "default_plot_typography_pt": {
+    "body": 6,
+    "axis_labels": 6,
+    "tick_labels": 5.5
+  },
+  "note": "DPI guidance applies to raster content at FINAL print size. PDF/SVG vector objects are not governed by raster DPI. This is a starting preset, not an acceptance guarantee.",
+  "slide_rule": "Never use publisher print font sizes on projected slides. Rebuild with larger labels.",
+  "copyright_notice": "Original assb-lab configuration based on publicly available author guidelines; no official template/branding copied."
+}

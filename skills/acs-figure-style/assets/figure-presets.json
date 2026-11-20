@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "checked_at": "2026-11-20",
+  "publisher": "ACS Publications",
+  "scope": "Chemistry of Materialsの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先",
+  "official_guidelines": [
+    "https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex"
+  ],
+  "guidelines_are_journal_specific": true,
+  "figure_width_mm": {
+    "single": 84.66666666666667,
+    "double": 177.79999999999998,
+    "min": null,
+    "max": 177.79999999999998,
+    "height": 232.83333333333334,
+    "max_height": 232.83333333333334
+  },
+  "raster_min_dpi": {
+    "photo": 300,
+    "grayscale": 600,
+    "line": 1200
+  },
+  "raster_preferred_dpi": {},
+  "vector_line_art_preferred": true,
+  "max_file_mb": null,
+  "default_plot_typography_pt": {
+    "body": 7,
+    "axis_labels": 7,
+    "tick_labels": 6.5
+  },
+  "note": "DPI guidance applies to raster content at FINAL print size. PDF/SVG vector objects are not governed by raster DPI. This is a starting preset, not an acceptance guarantee.",
+  "slide_rule": "Never use publisher print font sizes on projected slides. Rebuild with larger labels.",
+  "copyright_notice": "Original assb-lab configuration based on publicly available author guidelines; no official template/branding copied."
+}

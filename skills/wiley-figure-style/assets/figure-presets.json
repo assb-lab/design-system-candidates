@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "checked_at": "2026-11-20",
+  "publisher": "Wiley",
+  "scope": "Wiley Author Servicesの一般的Figure Preparation Guide（Advanced Materials等は各誌の現行規定を優先）",
+  "official_guidelines": [
+    "https://authorservices-ppd.wiley.com/author-resources/Journal-Authors/Prepare/manuscript-preparation-guidelines.html/figure-preparation.html"
+  ],
+  "guidelines_are_journal_specific": true,
+  "figure_width_mm": {
+    "single": null,
+    "double": null,
+    "min": 80,
+    "max": 180,
+    "height": null,
+    "max_height": null
+  },
+  "raster_min_dpi": {
+    "photo": 300,
+    "grayscale": 300,
+    "line": 600
+  },
+  "raster_preferred_dpi": {},
+  "vector_line_art_preferred": true,
+  "max_file_mb": 10,
+  "default_plot_typography_pt": {
+    "body": 8,
+    "axis_labels": 8,
+    "tick_labels": 7
+  },
+  "note": "DPI guidance applies to raster content at FINAL print size. PDF/SVG vector objects are not governed by raster DPI. This is a starting preset, not an acceptance guarantee.",
+  "slide_rule": "Never use publisher print font sizes on projected slides. Rebuild with larger labels.",
+  "copyright_notice": "Original assb-lab configuration based on publicly available author guidelines; no official template/branding copied."
+}

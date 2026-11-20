@@ -2,7 +2,7 @@
 
 学会発表、学術図表、技術資料、Webアプリなどで試せる **選択式のデザインスキル集** です。既存の [science-tokyo-design-skills](https://github.com/assb-lab/science-tokyo-design-skills) の代替候補として比較できるようにしています。
 
-**本リポジトリに収録された6つは、公開デザインの考え方に着想を得て独自に作成したAgent Skillです。** 参照元の公式デザインシステム、既存スキルのコピー、ロゴ・フォント・コンポーネントは同梱していません。大学のブランドが求められる公式資料では大学規定を優先してください。
+**本リポジトリに収録された11種類は、公開デザインの考え方に着想を得て独自に作成したAgent Skillです。** 参照元の公式デザインシステム、既存スキルのコピー、ロゴ・フォント・コンポーネントは同梱していません。大学のブランドが求められる公式資料では大学規定を優先してください。
 
 ## 導入（Claude Code / Codex）
 
@@ -20,7 +20,7 @@ npx skills add assb-lab/design-system-candidates --list
 # 研究発表・論文図表向けの1件を両エージェントへ
 npx skills add assb-lab/design-system-candidates --skill scientific-editorial -g -a claude-code -a codex
 
-# 6種類すべて追加（ユーザー全体）
+# 11種類すべて追加（ユーザー全体）
 npx skills add assb-lab/design-system-candidates --skill '*' -g -a claude-code -a codex
 
 # 個別例
@@ -42,10 +42,17 @@ npx skills update
 | [Scientific Editorial](skills/scientific-editorial/SKILL.md) | 白地、簡潔なサンセリフ、規則的なパネル配置、図表に隣接した注記。美観より学術的な正確性を優先。 | 学術論文のマルチパネル図・学会ポスター・学会発表 | 論文図、ポスター、PPTX、HTML | `scientific-editorial` |
 | [Carbon Research](skills/carbon-research/SKILL.md) | ニュートラルなグレーが主役。8px刻みのグリッドと明瞭な状態・操作区分、必要な箇所だけブルーで強調。 | 測定・解析WebアプリのUI・統計・技術ダッシュボード | Web UI、HTML、PPTX、グラフ | `carbon-research` |
 | [Digital Agency Design](skills/digital-agency-design/SKILL.md) | デジタル庁の日本語UI・アクセシビリティ・ローカルデザインシステムを参考にした独自スキル | 研究用Webアプリ、フォーム、テーブル、ファイルアップロード | React、HTML/CSS、Figma、UI設計 | `digital-agency-design` |
+| [Springer Nature Elements](skills/springer-nature-elements/SKILL.md) | Nature / Springer Natureの公開Webデザインシステムを参照。Sassテーマと編集的な情報階層 | 研究紹介サイト、技術記事、HTMLスライドの情報設計 | Web/HTML、PPTX構図参考 | `springer-nature-elements` |
+| [Nature Figure Style](skills/nature-figure-style/SKILL.md) | Nature本誌のFigure Guide。89/183 mm、編集可能なPDF/EPS、フォント・パネル規則 | 論文用多パネル図、SEM/XRD/XPS/EIS、発表図の原本 | PDF、SVG、PNG/TIFF、matplotlib | `nature-figure-style` |
+| [ACS Figure Style](skills/acs-figure-style/SKILL.md) | ACSの図版解像度（線画1200 / グレー600 / カラー300 dpi）・文字・線幅 | 化学・材料・電池研究のFigures、Scheme、TOC Graphicの事前確認 | PDF、SVG、TIFF、matplotlib | `acs-figure-style` |
+| [RSC Figure Style](skills/rsc-figure-style/SKILL.md) | RSC Advancesを代表例にした8.3/17.1 cm、TOC Graphic 8×4 cm、化学構造 | 化学構造、反応スキーム、Graphical Abstract、結晶構造 | TIFF、PDF、SVG、matplotlib | `rsc-figure-style` |
+| [Wiley Figure Style](skills/wiley-figure-style/SKILL.md) | Wileyの一般的なFigure Guideに基づく図の幅・解像度・形式と出力チェック | Advanced Materials系などに投稿する図版制作の開始点 | PDF、EPS、PNG/TIFF、matplotlib | `wiley-figure-style` |
 | [Midnight Technical](skills/midnight-technical/SKILL.md) | 深い紺色、明るい文字、明瞭なスペクトル色。3Dモデルやシミュレーション画像が主役。 | 3D・AR・材料シミュレーションの紹介・バンド構造・電子状態・スペクトル発表 | PPTX、HTML、技術デモ、グラフ | `midnight-technical` |
 | [Tufte Research](skills/tufte-research/SKILL.md) | 温かい紙の色、落ち着いたセリフ、本文の近くに配置した余白注釈、飾りを減らしたデータ可視化。 | 研究手法の解説HTMLと技術ノート・講演配布資料・長文の研究紹介 | HTML文書、配布資料、PPTX、図表 | `tufte-research` |
 
 ### 選び方
+
+**出版社系5スキルは公式ブランド・投稿規定の出典を参照した独自スキルです。** 図版スタイルは投稿先の正確なジャーナルと記事種別で適用範囲が変わります。
 
 - **学会口頭発表:** `metropolis-research` — 1枚1メッセージ、図や式を主役にする。
 - **学会ポスター・論文図・SEM/XRD/XPS/EIS:** `scientific-editorial` — データの正確さ・多パネル・注釈・スケールバーを優先。
@@ -53,6 +60,8 @@ npx skills update
 - **日本語の入力・データ管理画面:** `digital-agency-design` — アクセシブルなフォーム・データテーブル・ファイルアップロード。科学グラフには `scientific-editorial` を併用。
 - **3D・電子構造・技術デモ:** `midnight-technical` — 紺色背景、高コントラストなスペクトル線。
 - **研究方法の解説記事・配布資料:** `tufte-research` — 余白注釈と本文＋図表の関係を整理。
+- **Nature / Springer NatureのWeb向けデザイン:** `springer-nature-elements` — 公式のElementsコンポーネント・Sassを参照。Natureの論文図版仕様とは別。
+- **Nature・ACS・RSC・Wileyの論文図版:** `nature-figure-style` / `acs-figure-style` / `rsc-figure-style` / `wiley-figure-style` — 出版社別の幅・解像度・ファイル形式を確認しながら制作。
 
 ## スキル内のファイル
 
@@ -83,7 +92,54 @@ skills/digital-agency-design/
     └── tokens.css
 ```
 
+追加した出版社系スキルは用途別に以下の構成です。
+
+```text
+skills/springer-nature-elements/
+├── SKILL.md
+├── references/
+│   ├── implementation.md
+│   ├── web-and-slides.md
+│   └── sources-and-licensing.md
+└── assets/
+    ├── tokens.json
+    ├── editorial-starter.css
+    └── editorial-starter.html
+
+skills/{nature,acs,rsc,wiley}-figure-style/
+├── SKILL.md
+├── references/
+│   ├── publisher-requirements.md
+│   └── figure-workflow.md
+├── assets/
+│   ├── figure-presets.json
+│   └── scientific.mplstyle
+└── scripts/
+    └── preflight.py
+```
+
+**Figureスキルの実効DPIチェックはラスター画像全体の画素幅に基づく簡易検査です。** PDF中の埋め込み画像、図中文字、線幅、権利関係、投稿規定の完全適合は自動判定できません。
+
 各スキルは **デザインを適用するための指示とアセット** を提供します。`npx skills add` はPPTX生成エンジン、Python、matplotlib、TypstやIBM CarbonのUIライブラリ自体を自動でインストールするコマンドではありません。
+
+## 出版社系スキルの導入
+
+pnpmがある場合：
+
+```bash
+# 個別確認
+pnpm dlx skills add assb-lab/design-system-candidates --list
+
+# NatureのWeb向けデザイン（Elements）
+pnpm dlx skills add assb-lab/design-system-candidates --skill springer-nature-elements -g -a claude-code -a codex
+
+# 論文図版向け（必要な出版社のスキルを選択）
+pnpm dlx skills add assb-lab/design-system-candidates --skill nature-figure-style --skill acs-figure-style --skill rsc-figure-style --skill wiley-figure-style -g -a claude-code -a codex
+```
+
+pnpmがない場合は上記の `pnpm dlx` を `npx` に置き換えます。Node.js系の依存導入でもpnpm優先ですが、**既存プロジェクトの別マネージャー指定は尊重**します。
+
+各Figureスキルの `scripts/preflight.py` はPythonのツールです。画像形式によりPillowが必要になる場合があり、Node.jsの依存管理とは無関係です。
 
 ### 使用例
 
@@ -91,6 +147,11 @@ skills/digital-agency-design/
 このLi-Mg負極の学会発表をMetropolis ResearchのデザインでPPTXにして。
 このXPS/UPS/EISのマルチパネル図をScientific Editorialで読みやすくして。
 デジタル庁デザインシステムを参考に、測定データ管理Webアプリのフォームをアクセシブルにして。
+Nature Figure StyleでLi-Mg/LPSClのXPS、SEM、EISを多パネル図にして。
+ACS Figure Styleで線画の解像度と文字・線幅を検査して。
+RSC Figure Styleで化学構造とTOC Graphicを作って（投稿先の現行規定を確認）。
+Wiley Figure StyleでAdvanced Materials系向けのFigureを作り、投稿先の個別要件を確認して。
+Springer Nature Elementsで研究紹介サイトを設計して。
 OresmeProのデータ解析画面をCarbon Researchのグリッドとトークンで整理して。
 3D結晶構造シミュレーションをMidnight TechnicalのHTMLスライドにして。
 実験手順の説明文をTufte ResearchでHTML資料にして。
@@ -107,7 +168,7 @@ OresmeProのデータ解析画面をCarbon Researchのグリッドとトーク�
 | Scientific Slides | 学会、研究会、学位審査用のスライドストーリー・時間配分・ビジュアル検証 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-slides) | `npx skills add K-Dense-AI/scientific-agent-skills --skill scientific-slides` |
 | Presentation Design | 編集的な視覚階層とデッキの構成。上流の `slides.md` を併せて参照 | [blisse-code/presentation-design-skill](https://github.com/blisse-code/presentation-design-skill) | `npx skills add blisse-code/presentation-design-skill` |
 
-本家の出力機能や前提条件は上流の最新ドキュメントを確認してください。**収録6スキルをインストールしても上記4件は自動的にはインストールされません。**
+本家の出力機能や前提条件は上流の最新ドキュメントを確認してください。**収録11スキルをインストールしても上記4件は自動的にはインストールされません。**
 
 ## その他の既存Agent Skills — 追加調査（2026-11-19）
 
@@ -165,6 +226,11 @@ OresmeProのデータ解析画面をCarbon Researchのグリッドとトーク�
 - [Nature Research Figure Guide](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/) — 論文の図版の整列・編集可能なラベル・画像とスケールバー。
 - [IBM Carbon Design System](https://carbondesignsystem.com/) — トークン、IBM Plex、グリッド、グレー中心の構造。
 - [デジタル庁デザインシステムβ版](https://design.digital.go.jp/dads/) — 日本語UI、アクセシビリティ、ローカルデザインシステム。[公式利用条件](https://design.digital.go.jp/dads/introduction/notices/)も参照。
+- [Springer Nature Elements](https://eds.springernature.com/get-started/) — NatureとSpringer NatureのWebテーマ・デザイントークン・Sass。出版社のロゴと専用フォントは同梱しない。
+- [Nature Research Figure Guide](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/) — Nature本誌の図版規則。
+- [ACS Publications Author Guidelines](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) — Appendix 2の図版規則（誌別要件を再確認）。
+- [RSC Advances Author Guidelines](https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/rsc-advances) — 図版・TOC Graphic・化学構造の例。
+- [Wiley Figure Preparation](https://authorservices-ppd.wiley.com/author-resources/Journal-Authors/Prepare/manuscript-preparation-guidelines.html/figure-preparation.html) — 一般的な図版・画像ガイド。
 - [SeaSlides](https://github.com/touying-typ/seaslides) — Midnightなどのテーマ群。
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) — 注釈と情報デザイン。
 - [skills CLI](https://github.com/vercel-labs/skills) — Agent Skillの導入と更新。
