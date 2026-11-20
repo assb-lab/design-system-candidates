@@ -228,7 +228,7 @@ OresmeProのデータ解析画面をCarbon Researchのグリッドとトーク�
 - [デジタル庁デザインシステムβ版](https://design.digital.go.jp/dads/) — 日本語UI、アクセシビリティ、ローカルデザインシステム。[公式利用条件](https://design.digital.go.jp/dads/introduction/notices/)も参照。
 - [Springer Nature Elements](https://eds.springernature.com/get-started/) — NatureとSpringer NatureのWebテーマ・デザイントークン・Sass。出版社のロゴと専用フォントは同梱しない。
 - [Nature Research Figure Guide](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/) — Nature本誌の図版規則。
-- [ACS Publications Author Guidelines](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) — Appendix 2の図版規則（誌別要件を再確認）。
+- [ACS Publications Author Guidelines](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) — Appendix 2の図版規則（誌別要件を再確認）。
 - [RSC Advances Author Guidelines](https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/rsc-advances) — 図版・TOC Graphic・化学構造の例。
 - [Wiley Figure Preparation](https://authorservices-ppd.wiley.com/author-resources/Journal-Authors/Prepare/manuscript-preparation-guidelines.html/figure-preparation.html) — 一般的な図版・画像ガイド。
 - [SeaSlides](https://github.com/touying-typ/seaslides) — Midnightなどのテーマ群。

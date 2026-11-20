@@ -1,15 +1,15 @@
 # ACS Figure Style — 公式規定の確認メモ
 
-**最終確認日: 2026-11-20。** 以下は **ACS Central Scienceの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先** からの要点だけを独自に整理したもの。出版社グループ全体の一律規約ではない。作業着手時に対象誌・記事種別・初回提出か最終製版かを確認する。
+**最終確認日: 2026-11-20。** 以下は **Chemistry of Materialsの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先** からの要点だけを独自に整理したもの。出版社グループ全体の一律規約ではない。作業着手時に対象誌・記事種別・初回提出か最終製版かを確認する。
 
 | 条件 | 公式の数値・記載 | 出典 |
 | --- | --- | --- |
-| モノクロ線画のラスター解像度 | 1200 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
-| グレースケールのラスター解像度 | 600 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
-| カラー画像のラスター解像度 | 300 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
-| 1段幅 | 最大240 pt（約84.7 mm） | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
-| 2段幅 | 300–504 pt（約105.8–177.8 mm） | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
-| 最終図中文字 / 線幅 | 4.5 pt以上 / 0.5 pt以上 | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc) |
+| モノクロ線画のラスター解像度 | 1200 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
+| グレースケールのラスター解像度 | 600 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
+| カラー画像のラスター解像度 | 300 dpi | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
+| 1段幅 | 最大240 pt（約84.7 mm） | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
+| 2段幅 | 300–504 pt（約105.8–177.8 mm） | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
+| 最終図中文字 / 線幅 | 4.5 pt以上 / 0.5 pt以上 | [公式](https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex) |
 
 ## 判断の優先順位
 

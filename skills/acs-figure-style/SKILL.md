@@ -8,9 +8,9 @@ metadata:
 
 # ACS Figure Style
 
-**出版社公式スキルではない。** ACS Central Scienceの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先を読み、研究グラフ、論文図版、図中注釈、化学構造を整理する独自のAgent Skill。出版社のロゴ・公式テンプレート・ブランド素材は含めない。
+**出版社公式スキルではない。** Chemistry of Materialsの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先を読み、研究グラフ、論文図版、図中注釈、化学構造を整理する独自のAgent Skill。出版社のロゴ・公式テンプレート・ブランド素材は含めない。
 
-- 公式参照: https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc
+- 公式参照: https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex
 - 投稿・図版の厳密な条件は**出版社名だけで決めず、対象誌、記事種別、査読段階を確認する**。出版社の一般規定と個別ジャーナルの条件が異なれば、対象誌の最新版を優先する。
 - 参照した寸法や解像度の根拠: [publisher-requirements.md](references/publisher-requirements.md)
 - 自動化の範囲: Figureの最終幅とラスター画像の**実効DPI**の簡易チェック。図の意味、全フォント、各画像パネルのDPI、著作権、投稿先への適合性は別途確認が必要。

@@ -2,9 +2,9 @@
   "version": "1.0",
   "checked_at": "2026-11-20",
   "publisher": "ACS Publications",
-  "scope": "ACS Central Scienceの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先",
+  "scope": "Chemistry of Materialsの公開Author Guidelines Appendix 2を初期参考値とし、投稿先ACS誌の現行規定を必ず優先",
   "official_guidelines": [
-    "https://researcher-resources.acs.org/publish/author_guidelines?coden=acsccc"
+    "https://researcher-resources.acs.org/publish/author_guidelines?coden=cmatex"
   ],
   "guidelines_are_journal_specific": true,
   "figure_width_mm": {
