@@ -1,0 +1,20 @@
+/*
+ * Independent assb-lab aliases for official DADS CSS variables.
+ * Import @digital-go-jp/design-tokens/dist/tokens.css BEFORE this file.
+ * Requires the official token package; this is NOT a standalone theme.
+ * Do not override the official focus-visible or forced-color behavior.
+ */
+:root {
+  --research-da-background: var(--color-neutral-white);
+  --research-da-surface: var(--color-neutral-solid-gray-50);
+  --research-da-text: var(--color-neutral-solid-gray-900);
+  --research-da-muted: var(--color-neutral-solid-gray-700);
+  --research-da-key: var(--color-key-900);
+  --research-da-key-hover: var(--color-key-1000);
+  --research-da-border: var(--color-neutral-solid-gray-536);
+  --research-da-error: var(--color-semantic-error-1);
+  --research-da-success: var(--color-semantic-success-1);
+  --research-da-font-family: var(--font-family-sans);
+  --research-da-font-size: var(--font-size-16);
+  --research-da-radius: var(--border-radius-8);
+}

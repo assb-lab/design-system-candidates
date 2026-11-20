@@ -67,6 +67,10 @@ metadata:
 - **Matplotlib:** `plt.style.context("path/to/assets/scientific.mplstyle")` を使う。SVG/PDF書き出し時はフォント・透明度・ラベルの可読性を確認する。
 - **ポスター/文書:** 元データを保持し、図中文字の最終物理サイズ・印刷条件を確認する。
 
+## Node.jsのパッケージマネージャー
+
+Node.jsで依存追加・実行する場合、pnpmが利用可能なら `pnpm add` / `pnpm install` / `pnpm run` / `pnpm dlx` を優先する。pnpmがない場合はnpmを使う。ただし既存の `packageManager` 指定やロックファイルが他のマネージャーを指定している場合は、その指定を守り、無断で移行しない。
+
 ## 作業フロー
 
 1. 成果物の種類（PPTX/HTML/Webアプリ/論文図/ポスター）、閲覧条件、学会や投稿先の規定を確認する。情報が足りなければ明示的な仮定で進める。
